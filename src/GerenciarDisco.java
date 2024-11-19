@@ -8,6 +8,8 @@ public class GerenciarDisco implements IDisco{
         this.discos = new ArrayList<>();
     }
 
+
+
     @Override
     public void adicionarDisco(Disco disco) {
     discos.add(disco);
@@ -22,7 +24,7 @@ public class GerenciarDisco implements IDisco{
     public void listarTodos() {
 
         for (Disco disco : discos) {
-            System.out.println("Titulo: " + disco.getTitulo() + " | Nome Artista: " + disco.getArtista() + " | Genêro:"+ disco.getGenero() + " | Lançado em "+ disco.getAno() );
+            System.out.println("Titulo: " + disco.getTitulo() + " | Nome Artista: " + disco.getArtista() + " | Faixas:"+ disco.getFaixas() + " | Lançado em "+ disco.getAno() );
 
         }
 

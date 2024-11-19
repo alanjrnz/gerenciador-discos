@@ -1,16 +1,14 @@
-import java.util.List;
-
 public class Disco {
     private String titulo;
     private String artista;
-    private String genero;
+    private String faixas;
     private int ano;
 
 
-    public Disco(String titulo, String artista, String genero, int ano) {
+    public Disco(String titulo, String artista, String faixas, int ano) {
         this.titulo = titulo;
         this.artista = artista;
-        this.genero = genero;
+        this.faixas = faixas;
         this.ano = ano;
     }
 
@@ -30,12 +28,13 @@ public class Disco {
         this.artista = artista;
     }
 
-    public String getGenero() {
-        return genero;
+
+    public String getFaixas() {
+        return faixas;
     }
 
-    public void setGenero(String genero) {
-        this.genero = genero;
+    public void setFaixas(String faixas) {
+        this.faixas = faixas;
     }
 
     public int getAno() {
